@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+    <!-- css framework bulma  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar has-shadow is-white">
+      <!--Logo-->
+      <div class="navbar-brand ml-2">
+        <a href="./index.html">
+          <img
+            src="assets/mug_coffee.png"
+            alt="gambar.png"
+            style="max-height: 70px"
+            class="py-2 px-2"
+          />
+        </a>
+        <p style="margin-top: 15px; font-size: 25px">Rifat's Coffee</p>
+        <a id="burger" class="navbar-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <!--Menu-->
+      <div class="navbar-menu" id="">
+        <div class="navbar-end">
+          <a
+            href="#"
+            class="navbar-item has-background-link-white has-text-link-dark"
+            >My Account</a
+          >
+          <a
+            href="#"
+            class="navbar-item has-background-link-white has-text-link-dark"
+            >Isi Keranjang</a
+          >
+        </div>
+      </div>
+      <!--Pilihan Produk-->
+      <div class="section pt-4 pb-0 mb-4">
+        <nav class="breadcrumb has-arrow-separator">
+          <ul>
+            <a href="./index.html"><li class="is-active">Rifat Coffee</li></a>
+            <a href="#"><li class="is-active">Shop</li></a>
+            <a href="#"><li class="has-text-grey">Kopi Toraja 2</li></a>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+    <!--Informasi produk yang dipilih-->
+    <section class="section has-background-dark has-text-success-light">
+      <div class="container">
+        <div class="column is-vcentered is-multiline">
+          <div class="column is-6-tablet is-3-desktop">
+            <h1
+              class="is-size-3-mobile is-size-1-desktop title has-text-success-light"
+            >
+              Kopi
+            </h1>
+            <h2
+              class="is-size-3-mobile is-size-2-desktop subtitle has-text-success-light"
+            >
+              Toraja 2
+            </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iusto
+              atque facilis molestiae! Fugiat error commodi saepe nam!
+              Consectetur tempore pariatur, sit veniam magni ratione dolor quae
+              porro distinctio dolore?
+            </p>
+          </div>
+          <div class="column is-6-tablet is-5-desktop has-text-centered">
+            <img src="assets/product.png" alt="#" class="px-2" />
+          </div>
+          <div class="column is-12-tablet is-4-desktop">
+            <div class="is-size-4 mb-4">260.000</div>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              dolorem ad quidem omnis at eaque rem ullam quaerat nobis
+              voluptatem porro, modi delectus saepe, qui aperiam corrupti
+              architecto cupiditate quo?
+            </p>
+            <form>
+              <div class="control mb-6">
+                <div class="select is-dark">
+                  <select name="" id="">
+                    <option value="">Ukuran Kecil (250g)</option>
+                    <option value="">Ukuran Besar (500g)</option>
+                  </select>
+                </div>
+              </div>
+              <button class="button is-primary">Tambah ke Keranjang</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Information-->
+    <section class="section">
+      <div class="container">
+        <div class="columns is-variable is-8">
+          <div class="column is-7-tablet">
+            <!--bagian tabsnya-->
+            <div class="tabs is-boxed is-centered">
+              <ul>
+                <li class="is-active" data-target="product-details">
+                  <a>Detail Produk</a>
+                </li>
+                <li data-target="delivery-information">
+                  <a>Informasi Pengiriman</a>
+                </li>
+              </ul>
+            </div>
+            <!--isi kalimatnya-->
+            <div class="px-2" id="tab-content">
+              <div id="product-details">
+                <h3 class="is-size-5 title">Detail Produk</h3>
+                <ul>
+                  <li>
+                    <strong>Kopi Toraja 1:</strong> A bold and intense shot of
+                    pure coffee.
+                  </li>
+                  <li>
+                    <strong>Kopi Toraja 2:</strong> Perfectly balanced with
+                    equal parts espresso, steamed milk, and frothy foam.
+                  </li>
+                  <li>
+                    <strong>Kopi Toraja 3:</strong> Creamy and smooth, with a
+                    hint of sweetness.
+                  </li>
+                  <li>
+                    <strong>Kopi Toraja 4:</strong> Espresso combined with rich
+                    chocolate and topped with whipped cream.
+                  </li>
+                </ul>
+              </div>
+              <div id="delivery-information" class="is-hidden">
+                <h3 class="is-size-5 title">Informasi Pengiriman</h3>
+                <p><strong>Visit us at:</strong></p>
+                <address>
+                  123 Coffee Street<br />
+                  Tamalanrea Jaya, South Sulawesi<br />
+                  Indonesia
+                </address>
+                <p>
+                  For inquiries, call:
+                  <a
+                    href="https://wa.me/+6285396358995?text=Hi%20Halipuddin,%20I%27m%20interested%20in%20your%20services%20"
+                    >+62 853-9635-8995</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Sign up nya -->
+          <div id="menu-signup" class="column is-5-tablet">
+            <!--Kotak pesannya-->
+            <div class="message is-dark">
+              <div class="message-header">
+                <p>
+                  Di Halip Coffee, kami percaya bahwa secangkir kopi yang nikmat
+                  dapat membuat hari Anda lebih baik.
+                </p>
+              </div>
+              <div class="message-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  voluptates doloremque, nam incidunt itaque labore inventore
+                  voluptatibus harum sunt ab tempora est adipisci, rerum ex
+                  exercitationem tenetur eum saepe accusamus?
+                </p>
+                <div class="has-text-centered">
+                  <button class="button mt-5" id="signup">
+                    <a href="#menu-signup">Daftar</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Product Card-->
+    <section class="section is-1-mobile has-background-dark">
+      <div class="container">
+        <h3 class="title has-text-centered is-size-4 has-text-success-light">
+          Produk Serupa
+        </h3>
+        <div class="mt-5 columns is-centered is-8 is-variable">
+          <!--Produk 1-->
+          <div class="column is-4-tablet is-3-desktop">
+            <div class="card">
+              <div class="card-image has-text-centered px-6">
+                <img src="assets/p1.png" alt="" />
+              </div>
+              <div>
+                <p class="has-text-centered">Rp. 240.000</p>
+                <p class="title is-size-5 has-text-centered" style="margin-bottom: 7px">
+                  Kopi Toraja 1
+                </p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="./kopi-toraja1.html" class="has-text-grey">Lihat</a>
+                </p>
+              </footer>
+            </div>
+          </div>
+
+          <!--Produk 2-->
+          <div class="column is-4-tablet is-3-desktop">
+            <div class="card">
+              <div class="card-image has-text-centered px-6">
+                <img src="assets/p2.png" alt="" />
+              </div>
+              <div>
+                <p class="has-text-centered">Rp. 300.000</p>
+                <p class="title is-size-5 has-text-centered" style="margin-bottom: 7px">
+                  Kopi Toraja 2
+                </p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="./index.html" class="has-text-grey">Lihat</a>
+                </p>
+              </footer>
+            </div>
+          </div>
+
+          <!--Produk 3-->
+          <div class="column is-4-tablet is-3-desktop">
+            <div class="card">
+              <div class="card-image has-text-centered px-6">
+                <img src="assets/p3.png" alt="" />
+              </div>
+              <div>
+                <p class="has-text-centered">Rp. 169.000</p>
+                <p class="title is-size-5 has-text-centered" style="margin-bottom: 7px">
+                  Kopi Toraja 3
+                </p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="./kopi-toraja3.html" class="has-text-grey">Lihat</a>
+                </p>
+              </footer>
+            </div>
+          </div>
+          <!--Produk 4-->
+          <div class="column is-4-tablet is-3-desktop">
+            <div class="card">
+              <div class="card-image has-text-centered px-6">
+                <img src="assets/p4.png" alt="" />
+              </div>
+              <div>
+                <p class="has-text-centered">Rp. 169.000</p>
+                <p class="title is-size-5 has-text-centered" style="margin-bottom: 7px">
+                  Kopi Toraja 4
+                </p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="./kopi-toraja3.html" class="has-text-grey">Lihat</a>
+                </p>
+              </footer>
+            </div>
+          </div>
+    <script src="script.js"></script>
+  </body>
+</html>
